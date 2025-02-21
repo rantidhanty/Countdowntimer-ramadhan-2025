@@ -314,7 +314,7 @@ footer p {
   }
   body .mid {
     position: relative;
-    top: 25vh;
+    /* top: 25vh; */
   }
   body .d-flex .card {
     width: 30%;
