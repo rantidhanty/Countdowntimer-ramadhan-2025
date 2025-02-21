@@ -8,7 +8,6 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
-  /* min-width: 500px; */
 }
 
 body {
@@ -260,7 +259,7 @@ input:checked + .slider:before {
 }
 
 footer p {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
