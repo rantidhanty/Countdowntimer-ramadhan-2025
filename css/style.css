@@ -5,7 +5,7 @@
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -301,7 +301,7 @@ footer p {
     font-size: 24px;
   }
   footer {
-    margin-top: 20%;
+    margin-top: 15%;
   }
   footer p {
     font-size: 12px !important;
@@ -312,25 +312,30 @@ footer p {
   .ramadhan-message {
     /* background-color: blue; */
     font-size: 3px;
+    padding: 0 10px
   }
   .d-flex {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+    gap: 3px;
     width: max-content;
     margin: 0 auto;
   }
   .d-flex .card {
-    padding: 6px;
+    padding: 5px;
     text-align: center;
-  }
-  .mid {
-    top: 50%;
   }
   .mid h1 {
     font-size: 24px;
   }
-  footer {
-    margin-top: 10%;
+   .mid {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 30% !important;
+  }
+  footer p{
+    margin-top: 0;
   }
 }

@@ -46,16 +46,22 @@ function toggleCheck() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const music = document.getElementById("bg-music");
+
+  // Tampilkan alert saat halaman dimuat
   alert("Assalamu’alaikum! Selamat datang di TK Islam Harapan Sukatani 😊");
+
+  // Setelah alert ditutup, coba play musik
   music.play().catch(() => {
     console.log("Autoplay diblokir, menunggu interaksi pengguna...");
-    document.body.addEventListener(
-      "click",
-      function () {
-        music.play();
-        console.log("Musik diputar setelah interaksi pengguna.");
-      },
-      { once: true }
-    );
   });
+
+  // Jika autoplay masih diblokir, jalankan saat pengguna berinteraksi pertama kali
+  document.body.addEventListener(
+    "click",
+    function () {
+      music.play();
+      console.log("Musik diputar setelah interaksi pengguna.");
+    },
+    { once: true }
+  ); // Hanya dijalankan sekali
 });
